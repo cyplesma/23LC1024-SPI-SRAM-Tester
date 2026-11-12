@@ -1,0 +1,2736 @@
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 53218
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 25
+Completed speed cycles: 8
+
+SRAM #1
+Passed: 16384000
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 16384000
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 16384000
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 49152000
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 874
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #26
+SPI SPEED: 4 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 26453
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 26
+Completed speed cycles: 8
+
+SRAM #1
+Passed: 17039360
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 17039360
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 17039360
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 51118080
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 901
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #27
+SPI SPEED: 8 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 21910
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 27
+Completed speed cycles: 8
+
+SRAM #1
+Passed: 17694720
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 17694720
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 17694720
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 53084160
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 923
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #28
+SPI SPEED: 1 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 53218
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 28
+Completed speed cycles: 9
+
+SRAM #1
+Passed: 18350080
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 18350080
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 18350080
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 55050240
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 977
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #29
+SPI SPEED: 4 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 26454
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 29
+Completed speed cycles: 9
+
+SRAM #1
+Passed: 19005440
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 19005440
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 19005440
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 57016320
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1004
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #30
+SPI SPEED: 8 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 21912
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 30
+Completed speed cycles: 9
+
+SRAM #1
+Passed: 19660800
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 19660800
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 19660800
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 58982400
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1026
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #31
+SPI SPEED: 1 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 53218
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 31
+Completed speed cycles: 10
+
+SRAM #1
+Passed: 20316160
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 20316160
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 20316160
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 60948480
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1079
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #32
+SPI SPEED: 4 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 26454
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 32
+Completed speed cycles: 10
+
+SRAM #1
+Passed: 20971520
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 20971520
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 20971520
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 62914560
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1106
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #33
+SPI SPEED: 8 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 21912
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 33
+Completed speed cycles: 10
+
+SRAM #1
+Passed: 21626880
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 21626880
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 21626880
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 64880640
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1128
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #34
+SPI SPEED: 1 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 53218
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 34
+Completed speed cycles: 11
+
+SRAM #1
+Passed: 22282240
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 22282240
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 22282240
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 66846720
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1182
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #35
+SPI SPEED: 4 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 26454
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 35
+Completed speed cycles: 11
+
+SRAM #1
+Passed: 22937600
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 22937600
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 22937600
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 68812800
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1209
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #36
+SPI SPEED: 8 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 21911
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 36
+Completed speed cycles: 11
+
+SRAM #1
+Passed: 23592960
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 23592960
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 23592960
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 70778880
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1231
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #37
+SPI SPEED: 1 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 53219
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 37
+Completed speed cycles: 12
+
+SRAM #1
+Passed: 24248320
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 24248320
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 24248320
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 72744960
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1285
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #38
+SPI SPEED: 4 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 26454
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 38
+Completed speed cycles: 12
+
+SRAM #1
+Passed: 24903680
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 24903680
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 24903680
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 74711040
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1311
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #39
+SPI SPEED: 8 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 21911
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 39
+Completed speed cycles: 12
+
+SRAM #1
+Passed: 25559040
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 25559040
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 25559040
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 76677120
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1334
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #40
+SPI SPEED: 1 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 53218
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 40
+Completed speed cycles: 13
+
+SRAM #1
+Passed: 26214400
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 26214400
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 26214400
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 78643200
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1387
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #41
+SPI SPEED: 4 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 26454
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 41
+Completed speed cycles: 13
+
+SRAM #1
+Passed: 26869760
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 26869760
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 26869760
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 80609280
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1414
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #42
+SPI SPEED: 8 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 21912
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 42
+Completed speed cycles: 13
+
+SRAM #1
+Passed: 27525120
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 27525120
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 27525120
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 82575360
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1436
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #43
+SPI SPEED: 1 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 53218
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 43
+Completed speed cycles: 14
+
+SRAM #1
+Passed: 28180480
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 28180480
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 28180480
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 84541440
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1490
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #44
+SPI SPEED: 4 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 26454
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 44
+Completed speed cycles: 14
+
+SRAM #1
+Passed: 28835840
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 28835840
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 28835840
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 86507520
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1517
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #45
+SPI SPEED: 8 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 21912
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 45
+Completed speed cycles: 14
+
+SRAM #1
+Passed: 29491200
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 29491200
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 29491200
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 88473600
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1539
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #46
+SPI SPEED: 1 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 53218
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 46
+Completed speed cycles: 15
+
+SRAM #1
+Passed: 30146560
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 30146560
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 30146560
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 90439680
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1592
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #47
+SPI SPEED: 4 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 26454
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 47
+Completed speed cycles: 15
+
+SRAM #1
+Passed: 30801920
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 30801920
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 30801920
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 92405760
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1619
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #48
+SPI SPEED: 8 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 21910
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 48
+Completed speed cycles: 15
+
+SRAM #1
+Passed: 31457280
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 31457280
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 31457280
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 94371840
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1642
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #49
+SPI SPEED: 1 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 53219
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 49
+Completed speed cycles: 16
+
+SRAM #1
+Passed: 32112640
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 32112640
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 32112640
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 96337920
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1695
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #50
+SPI SPEED: 4 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+----------------------------
+Sweep comparisons: 1966080
+Memory failures: 0
+Isolation failures: 0
+Elapsed (ms): 26454
+SWEEP RESULT: PASS
+
+============================
+CUMULATIVE STATISTICS
+============================
+Completed sweeps: 50
+Completed speed cycles: 16
+
+SRAM #1
+Passed: 32768000
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #2
+Passed: 32768000
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+SRAM #3
+Passed: 32768000
+Failed: 0
+Isolation failures: 0
+Failures by pattern:
+  ALL ZERO: 0
+  ALL ONE: 0
+  ALT 0x55: 0
+  ALT 0xAA: 0
+  ADDRESS: 0
+Failures by speed:
+  1 MHz: 0
+  4 MHz: 0
+  8 MHz: 0
+
+----------------------------
+ALL CHIPS COMBINED
+Total passed: 98304000
+Total failed: 0
+Isolation failures: 0
+Runtime seconds: 1722
+
+STATUS: ALL CHIPS PASSING
+
+============================
+SWEEP #51
+SPI SPEED: 8 MHz
+============================
+SRAM #1 Mode: 0x40
+SRAM #2 Mode: 0x40
+SRAM #3 Mode: 0x40
+
+CHIP ISOLATION TEST
+SRAM #1 - PASS
+SRAM #2 - PASS
+SRAM #3 - PASS
+Isolation failures: 0
+
+SRAM #1 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #2 MEMORY TEST
+ALL ZERO - Failed: 0
+ALL ONE - Failed: 0
+ALT 0x55 - Failed: 0
+ALT 0xAA - Failed: 0
+ADDRESS - Failed: 0
+CHIP RESULT: PASS
+
+SRAM #3 MEMORY TEST
