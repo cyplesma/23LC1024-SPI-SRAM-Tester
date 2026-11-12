@@ -1,0 +1,697 @@
+
+#include <SPI.h>
+
+// ========================================
+// 23LC1024 THREE-CHIP ENDURANCE TESTER
+// Arduino UNO
+// ========================================
+
+const byte SRAM_COUNT = 3;
+
+const byte SRAM_CS[SRAM_COUNT] = {
+  10,  // SRAM #1
+   9,  // SRAM #2
+   8   // SRAM #3
+};
+
+const uint32_t SRAM_SIZE = 131072UL;
+const byte BLOCK_SIZE = 32;
+
+const byte SPEED_COUNT = 3;
+const byte PATTERN_COUNT = 5;
+
+const uint32_t SPI_SPEEDS[SPEED_COUNT] = {
+  1000000UL,
+  4000000UL,
+  8000000UL
+};
+
+const byte CMD_WRMR  = 0x01;
+const byte CMD_WRITE = 0x02;
+const byte CMD_READ  = 0x03;
+const byte CMD_RDMR  = 0x05;
+
+const byte SEQUENTIAL_MODE = 0x40;
+
+// ========================================
+// TEST STATUS
+// ========================================
+
+byte currentChip = 0;
+byte currentSpeed = 0;
+
+uint32_t completedSweeps = 0;
+uint32_t completedSpeedCycles = 0;
+
+// 64-bit cumulative counters
+uint64_t chipPassed[SRAM_COUNT] = {0};
+uint64_t chipFailed[SRAM_COUNT] = {0};
+
+uint64_t patternFailures[SRAM_COUNT]
+                        [PATTERN_COUNT] = {{0}};
+
+uint64_t speedFailures[SRAM_COUNT]
+                      [SPEED_COUNT] = {{0}};
+
+uint32_t isolationFailures[SRAM_COUNT] = {0};
+
+struct ErrorRecord {
+  uint32_t address;
+  uint32_t sweep;
+  byte chip;
+  byte speed;
+  byte pattern;
+  byte expected;
+  byte actual;
+};
+
+ErrorRecord firstError;
+ErrorRecord lastError;
+
+bool firstErrorRecorded = false;
+
+// ========================================
+// DISPLAY HELPERS
+// ========================================
+
+void print64(uint64_t value) {
+  char buffer[21];
+  byte index = 0;
+
+  do {
+    buffer[index++] = '0' + (value % 10);
+    value /= 10;
+  } while (value > 0);
+
+  while (index > 0) {
+    Serial.print(buffer[--index]);
+  }
+}
+
+void printHexByte(byte value) {
+  if (value < 16) Serial.print('0');
+  Serial.print(value, HEX);
+}
+
+void printChip(byte chip) {
+  Serial.print(F("SRAM #"));
+  Serial.print(chip + 1);
+}
+
+void printSpeed(byte speed) {
+  Serial.print(SPI_SPEEDS[speed] / 1000000UL);
+  Serial.print(F(" MHz"));
+}
+
+void printPattern(byte pattern) {
+  switch (pattern) {
+    case 0: Serial.print(F("ALL ZERO")); break;
+    case 1: Serial.print(F("ALL ONE")); break;
+    case 2: Serial.print(F("ALT 0x55")); break;
+    case 3: Serial.print(F("ALT 0xAA")); break;
+    case 4: Serial.print(F("ADDRESS")); break;
+  }
+}
+
+// ========================================
+// SPI CONTROL
+// ========================================
+
+void selectSRAM(byte chip) {
+  currentChip = chip;
+
+  SPI.beginTransaction(
+    SPISettings(
+      SPI_SPEEDS[currentSpeed],
+      MSBFIRST,
+      SPI_MODE3
+    )
+  );
+
+  digitalWrite(SRAM_CS[chip], LOW);
+  delayMicroseconds(5);
+}
+
+void deselectSRAM(byte chip) {
+  delayMicroseconds(5);
+
+  digitalWrite(SRAM_CS[chip], HIGH);
+
+  delayMicroseconds(5);
+  SPI.endTransaction();
+}
+
+void sendAddress(uint32_t address) {
+  SPI.transfer((address >> 16) & 0xFF);
+  SPI.transfer((address >> 8) & 0xFF);
+  SPI.transfer(address & 0xFF);
+}
+
+void setSequentialMode(byte chip) {
+  selectSRAM(chip);
+
+  SPI.transfer(CMD_WRMR);
+  SPI.transfer(SEQUENTIAL_MODE);
+
+  deselectSRAM(chip);
+}
+
+byte readMode(byte chip) {
+  selectSRAM(chip);
+
+  SPI.transfer(CMD_RDMR);
+  byte result = SPI.transfer(0x00);
+
+  deselectSRAM(chip);
+  return result;
+}
+
+// ========================================
+// INDIVIDUAL BYTE ACCESS
+// ========================================
+
+void writeByte(
+  byte chip,
+  uint32_t address,
+  byte value
+) {
+  selectSRAM(chip);
+
+  SPI.transfer(CMD_WRITE);
+  sendAddress(address);
+  SPI.transfer(value);
+
+  deselectSRAM(chip);
+}
+
+byte readByte(byte chip, uint32_t address) {
+  selectSRAM(chip);
+
+  SPI.transfer(CMD_READ);
+  sendAddress(address);
+
+  byte value = SPI.transfer(0x00);
+
+  deselectSRAM(chip);
+  return value;
+}
+
+// ========================================
+// MEMORY PATTERNS
+// ========================================
+
+byte getPattern(byte pattern, uint32_t address) {
+  switch (pattern) {
+    case 0: return 0x00;
+    case 1: return 0xFF;
+    case 2: return 0x55;
+    case 3: return 0xAA;
+
+    case 4:
+      return (byte)(
+        address ^
+        (address >> 8) ^
+        (address >> 16) ^
+        0xA5
+      );
+  }
+
+  return 0;
+}
+
+// ========================================
+// ERROR REPORTING
+// ========================================
+
+void recordError(
+  byte chip,
+  byte pattern,
+  uint32_t address,
+  byte expected,
+  byte actual
+) {
+  ErrorRecord error;
+
+  error.chip = chip;
+  error.pattern = pattern;
+  error.address = address;
+  error.expected = expected;
+  error.actual = actual;
+  error.speed = currentSpeed;
+  error.sweep = completedSweeps + 1;
+
+  if (!firstErrorRecorded) {
+    firstError = error;
+    firstErrorRecorded = true;
+  }
+
+  lastError = error;
+}
+
+void printError(const ErrorRecord &error) {
+  printChip(error.chip);
+  Serial.println();
+
+  Serial.print(F("Sweep: "));
+  Serial.println(error.sweep);
+
+  Serial.print(F("Speed: "));
+  printSpeed(error.speed);
+  Serial.println();
+
+  Serial.print(F("Pattern: "));
+  if (error.pattern == 5)
+    Serial.print(F("ISOLATION"));
+  else
+    printPattern(error.pattern);
+  Serial.println();
+
+  Serial.print(F("Address: 0x"));
+  Serial.println(error.address, HEX);
+
+  Serial.print(F("Expected: 0x"));
+  printHexByte(error.expected);
+
+  Serial.print(F(" Actual: 0x"));
+  printHexByte(error.actual);
+  Serial.println();
+}
+
+// ========================================
+// CHIP ISOLATION TEST
+// ========================================
+
+// Different data for each chip.
+// Test two widely separated addresses.
+
+const uint32_t ISOLATION_ADDR[2] = {
+  0x01000UL,
+  0x1FFFEUL
+};
+
+const byte ISOLATION_VALUES[3][2] = {
+  {0x55, 0xA5},
+  {0xAA, 0x5A},
+  {0x33, 0xCC}
+};
+
+uint32_t testIsolation() {
+  uint32_t failures = 0;
+
+  Serial.println();
+  Serial.println(F("CHIP ISOLATION TEST"));
+
+  // Write all chips before reading any.
+  for (byte chip = 0; chip < SRAM_COUNT; chip++) {
+    for (byte i = 0; i < 2; i++) {
+      writeByte(
+        chip,
+        ISOLATION_ADDR[i],
+        ISOLATION_VALUES[chip][i]
+      );
+    }
+  }
+
+  // Verify each chip retained its own data.
+  for (byte chip = 0; chip < SRAM_COUNT; chip++) {
+    uint32_t chipErrors = 0;
+
+    for (byte i = 0; i < 2; i++) {
+      byte expected = ISOLATION_VALUES[chip][i];
+
+      byte actual = readByte(
+        chip,
+        ISOLATION_ADDR[i]
+      );
+
+      if (actual != expected) {
+        failures++;
+        chipErrors++;
+        isolationFailures[chip]++;
+
+        recordError(
+          chip,
+          5,
+          ISOLATION_ADDR[i],
+          expected,
+          actual
+        );
+      }
+    }
+
+    printChip(chip);
+    Serial.print(F(" - "));
+
+    Serial.println(
+      chipErrors == 0 ? F("PASS") : F("FAIL")
+    );
+  }
+
+  Serial.print(F("Isolation failures: "));
+  Serial.println(failures);
+
+  return failures;
+}
+
+// ========================================
+// FULL MEMORY TEST
+// ========================================
+
+uint32_t testMemory(
+  byte chip,
+  byte pattern
+) {
+  uint32_t failures = 0;
+
+  // WRITE ENTIRE SRAM
+  for (uint32_t base = 0;
+       base < SRAM_SIZE;
+       base += BLOCK_SIZE) {
+
+    selectSRAM(chip);
+
+    SPI.transfer(CMD_WRITE);
+    sendAddress(base);
+
+    for (byte i = 0; i < BLOCK_SIZE; i++) {
+      SPI.transfer(
+        getPattern(pattern, base + i)
+      );
+    }
+
+    deselectSRAM(chip);
+  }
+
+  // READ AND VERIFY ENTIRE SRAM
+  for (uint32_t base = 0;
+       base < SRAM_SIZE;
+       base += BLOCK_SIZE) {
+
+    selectSRAM(chip);
+
+    SPI.transfer(CMD_READ);
+    sendAddress(base);
+
+    for (byte i = 0; i < BLOCK_SIZE; i++) {
+      uint32_t address = base + i;
+
+      byte expected = getPattern(pattern, address);
+      byte actual = SPI.transfer(0x00);
+
+      if (actual != expected) {
+        failures++;
+
+        recordError(
+          chip,
+          pattern,
+          address,
+          expected,
+          actual
+        );
+      }
+    }
+
+    deselectSRAM(chip);
+  }
+
+  chipPassed[chip] += SRAM_SIZE - failures;
+  chipFailed[chip] += failures;
+
+  patternFailures[chip][pattern] += failures;
+  speedFailures[chip][currentSpeed] += failures;
+
+  return failures;
+}
+
+// ========================================
+// CUMULATIVE STATISTICS
+// ========================================
+
+void printStatistics() {
+  Serial.println();
+  Serial.println(F("============================"));
+  Serial.println(F("CUMULATIVE STATISTICS"));
+  Serial.println(F("============================"));
+
+  Serial.print(F("Completed sweeps: "));
+  Serial.println(completedSweeps);
+
+  Serial.print(F("Completed speed cycles: "));
+  Serial.println(completedSpeedCycles);
+
+  uint64_t allPassed = 0;
+  uint64_t allFailed = 0;
+  uint32_t allIsolationFailed = 0;
+
+  for (byte chip = 0; chip < SRAM_COUNT; chip++) {
+    Serial.println();
+
+    printChip(chip);
+    Serial.println();
+
+    Serial.print(F("Passed: "));
+    print64(chipPassed[chip]);
+    Serial.println();
+
+    Serial.print(F("Failed: "));
+    print64(chipFailed[chip]);
+    Serial.println();
+
+    Serial.print(F("Isolation failures: "));
+    Serial.println(isolationFailures[chip]);
+
+    Serial.println(F("Failures by pattern:"));
+
+    for (byte p = 0; p < PATTERN_COUNT; p++) {
+      Serial.print(F("  "));
+      printPattern(p);
+      Serial.print(F(": "));
+      print64(patternFailures[chip][p]);
+      Serial.println();
+    }
+
+    Serial.println(F("Failures by speed:"));
+
+    for (byte s = 0; s < SPEED_COUNT; s++) {
+      Serial.print(F("  "));
+      printSpeed(s);
+      Serial.print(F(": "));
+      print64(speedFailures[chip][s]);
+      Serial.println();
+    }
+
+    allPassed += chipPassed[chip];
+    allFailed += chipFailed[chip];
+    allIsolationFailed += isolationFailures[chip];
+  }
+
+  Serial.println();
+  Serial.println(F("----------------------------"));
+  Serial.println(F("ALL CHIPS COMBINED"));
+
+  Serial.print(F("Total passed: "));
+  print64(allPassed);
+  Serial.println();
+
+  Serial.print(F("Total failed: "));
+  print64(allFailed);
+  Serial.println();
+
+  Serial.print(F("Isolation failures: "));
+  Serial.println(allIsolationFailed);
+
+  Serial.print(F("Runtime seconds: "));
+  Serial.println(millis() / 1000UL);
+
+  if (firstErrorRecorded) {
+    Serial.println();
+    Serial.println(F("FIRST ERROR:"));
+    printError(firstError);
+
+    Serial.println(F("LATEST ERROR:"));
+    printError(lastError);
+  }
+
+  Serial.println();
+  Serial.println(
+    (allFailed == 0 && allIsolationFailed == 0)
+    ? F("STATUS: ALL CHIPS PASSING")
+    : F("STATUS: ERRORS DETECTED")
+  );
+}
+
+// ========================================
+// RUN ONE COMPLETE SWEEP
+// ========================================
+
+void runSweep() {
+  uint32_t sweepNumber = completedSweeps + 1;
+
+  Serial.println();
+  Serial.println(F("============================"));
+  Serial.print(F("SWEEP #"));
+  Serial.println(sweepNumber);
+
+  Serial.print(F("SPI SPEED: "));
+  printSpeed(currentSpeed);
+  Serial.println();
+  Serial.println(F("============================"));
+
+  // Verify all three mode registers.
+  for (byte chip = 0; chip < SRAM_COUNT; chip++) {
+    byte mode = readMode(chip);
+
+    printChip(chip);
+    Serial.print(F(" Mode: 0x"));
+    printHexByte(mode);
+    Serial.println();
+
+    if (mode != SEQUENTIAL_MODE) {
+      Serial.println(F("MODE REGISTER FAILURE"));
+      Serial.println(F("TEST HALTED"));
+
+      while (true) {
+        delay(1000);
+      }
+    }
+  }
+
+  unsigned long startTime = millis();
+
+  uint32_t isolationErrors = testIsolation();
+  uint32_t sweepErrors = 0;
+
+  // Test every pattern on every chip.
+  for (byte chip = 0; chip < SRAM_COUNT; chip++) {
+    Serial.println();
+
+    printChip(chip);
+    Serial.println(F(" MEMORY TEST"));
+
+    uint32_t chipErrors = 0;
+
+    for (byte p = 0; p < PATTERN_COUNT; p++) {
+      uint32_t errors = testMemory(chip, p);
+
+      chipErrors += errors;
+      sweepErrors += errors;
+
+      printPattern(p);
+      Serial.print(F(" - Failed: "));
+      Serial.println(errors);
+    }
+
+    Serial.print(F("CHIP RESULT: "));
+
+    Serial.println(
+      chipErrors == 0
+      ? F("PASS")
+      : F("FAIL")
+    );
+  }
+
+  unsigned long elapsed = millis() - startTime;
+
+  completedSweeps++;
+
+  Serial.println();
+  Serial.println(F("----------------------------"));
+
+  Serial.print(F("Sweep comparisons: "));
+  Serial.println(SRAM_SIZE * PATTERN_COUNT
+                 * SRAM_COUNT);
+
+  Serial.print(F("Memory failures: "));
+  Serial.println(sweepErrors);
+
+  Serial.print(F("Isolation failures: "));
+  Serial.println(isolationErrors);
+
+  Serial.print(F("Elapsed (ms): "));
+  Serial.println(elapsed);
+
+  Serial.println(
+    (sweepErrors == 0 && isolationErrors == 0)
+    ? F("SWEEP RESULT: PASS")
+    : F("SWEEP RESULT: FAIL")
+  );
+
+  printStatistics();
+
+  // Advance SPI speed.
+  currentSpeed++;
+
+  if (currentSpeed >= SPEED_COUNT) {
+    currentSpeed = 0;
+    completedSpeedCycles++;
+  }
+}
+
+// ========================================
+// SETUP
+// ========================================
+
+void setup() {
+  Serial.begin(115200);
+
+  // Set output latch HIGH before enabling
+  // each pin as an output.
+  for (byte chip = 0; chip < SRAM_COUNT; chip++) {
+    digitalWrite(SRAM_CS[chip], HIGH);
+    pinMode(SRAM_CS[chip], OUTPUT);
+  }
+
+  SPI.begin();
+
+  delay(250);
+
+  Serial.println();
+  Serial.println(F("============================"));
+  Serial.println(F("23LC1024 THREE SRAM TESTER"));
+  Serial.println(F("============================"));
+
+  Serial.println(F("Chips: 3"));
+  Serial.println(F("Capacity: 384 KB"));
+  Serial.println(F("SPI Mode: 3"));
+  Serial.println(F("Speeds: 1, 4, 8 MHz"));
+  Serial.println(F("CS Delay: 5us"));
+  Serial.println(F("Block Size: 32"));
+  Serial.println(F("Patterns: 5"));
+  Serial.println(F("Mode: CONTINUOUS"));
+
+  // Initialize each SRAM.
+  for (byte chip = 0; chip < SRAM_COUNT; chip++) {
+    setSequentialMode(chip);
+
+    byte mode = readMode(chip);
+
+    printChip(chip);
+    Serial.print(F(" initialization: "));
+
+    if (mode == SEQUENTIAL_MODE) {
+      Serial.println(F("PASS"));
+    } else {
+      Serial.print(F("FAIL - 0x"));
+      printHexByte(mode);
+      Serial.println();
+      Serial.println(F("TEST HALTED"));
+
+      while (true) {
+        delay(1000);
+      }
+    }
+  }
+
+  Serial.println();
+  Serial.println(F("ALL CHIPS INITIALIZED"));
+  Serial.println(F("STARTING ENDURANCE TEST"));
+}
+
+// ========================================
+// CONTINUOUS TEST
+// ========================================
+
+void loop() {
+  runSweep();
+  delay(250);
+}
